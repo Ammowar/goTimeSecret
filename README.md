@@ -1,10 +1,10 @@
-# One Time Secret
+# GO Time Secret
 
-One Time Secret is a Go web app that allows users to create and share unique secrets that can only be viewed once.
+GO Time Secret is a Go web app that allows users to create and share unique secrets that can only be viewed once.
 
 ## Installation
 
-To install One Time Secret, you need to have Go installed on your system. You can download and install Go from the official Go website: https://golang.org/dl/
+To install GO Time Secret, you need to have Go installed on your system. You can download and install Go from the official Go website: https://golang.org/dl/
 
 Once you have Go installed, clone this repository and run the following commands in your terminal:
 
