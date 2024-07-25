@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>One-Time Secret</title>
+</head>
+<body>
+    <h1>Create a One-Time Secret</h1>
+    <form action="/create" method="post">
+        <textarea name="content" rows="4" cols="50" placeholder="Enter your secret here"></textarea><br>
+        <label for="expiration">Expiration time:</label>
+        <select name="expiration" id="expiration">
+            <option value="1m">1 minute</option>
+            <option value="5m">5 minutes</option>
+            <option value="15m">15 minutes</option>
+            <option value="30m">30 minutes</option>
+            <option value="1h" selected>1 hour</option>
+            <option value="6h">6 hours</option>
+            <option value="12h">12 hours</option>
+            <option value="1d">1 day</option>
+            <option value="2d">2 days</option>
+            <option value="7d">1 week</option>
+        </select><br>
+        <input type="submit" value="Create Secret">
+    </form>
+</body>
+</html>

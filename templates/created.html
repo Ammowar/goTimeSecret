@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secret Created</title>
+</head>
+<body>
+    <h1>Secret Created Successfully</h1>
+    <p>Your secret is available at: <a href="{{.URL}}">{{.URL}}</a></p>
+    <p>It will expire at: {{.ExpiresAt}}</p>
+    <div id="notification"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(event) {
+                if ("{{.Id}}"!=="") {
+                    console.log("Connecting to websocket...");
+                    const ws = new WebSocket('ws://' + window.location.host + '/ws?id=' + "{{.Id}}");
+                    ws.onmessage = function(event) {
+                        document.getElementById('notification').innerText = event.data;
+                    };
+                }
+            });        
+    </script>
+
+</body>
+</html>
